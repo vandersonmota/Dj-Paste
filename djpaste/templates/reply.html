@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+    {% block content %}
+        <form  action="/" method="post">
+            <label for="id_code">Code:
+                <textarea id="id_code" name="code"> {{ snippet.code }} </textarea><p/>
+            <label for="id_language">Language: {{ snippet.language }}
+            <input id="id_language" name="language" type="hidden"
+                   value="{{ snippet.language }}" /><p/>
+            <input  type="submit" value="Paste!" name="paste" />
+        </form>
+    {% endblock content %}

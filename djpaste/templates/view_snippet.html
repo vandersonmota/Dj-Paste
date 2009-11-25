@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+    {% block header %}
+        <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}highlight.css" />
+    {% endblock header %}
+
+    {% block content %}
+        {{ object.highlighted_code|safe }}
+        <a href="/reply/{{object.id}}"> Repĺy </a><p/>
+        <a href="/"> New Snippet </a>
+    {% endblock content %}
+    
+    
+
