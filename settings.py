@@ -1,4 +1,4 @@
-# Django settings for exemplo project.
+# Django settings for  project.
 
 from os import path
 PROJECT_ROOT_PATH = path.dirname(path.abspath(__file__))
@@ -66,7 +66,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
 )
 
-ROOT_URLCONF = 'exemplo.urls'
+ROOT_URLCONF = 'urls'
 
 
 TEMPLATE_DIRS = (
